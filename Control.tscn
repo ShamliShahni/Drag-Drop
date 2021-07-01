@@ -1,0 +1,75 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/haunting.png" type="Texture" id=2]
+
+[sub_resource type="Theme" id=1]
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 25.6, 14.96 )
+color = Color( 0.203922, 0.2, 0.2, 1 )
+
+[node name="Button" type="Button" parent="."]
+modulate = Color( 0.870588, 0.705882, 0.705882, 1 )
+margin_left = 368.699
+margin_top = 409.371
+margin_right = 448.699
+margin_bottom = 429.371
+rect_scale = Vector2( 3.62407, 6.89068 )
+theme = SubResource( 1 )
+custom_colors/font_color_disabled = Color( 0.505882, 0.407843, 0.407843, 1 )
+custom_colors/font_color = Color( 1, 0.788235, 0.788235, 1 )
+custom_colors/font_color_hover = Color( 0.603922, 0.435294, 0.435294, 1 )
+custom_colors/font_color_pressed = Color( 0.643137, 0.337255, 0.337255, 1 )
+text = "Play Game"
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RandomButton" type="Button" parent="."]
+margin_left = 327.873
+margin_top = 114.355
+margin_right = 851.873
+margin_bottom = 632.355
+rect_scale = Vector2( 0.688994, 0.486152 )
+custom_colors/font_color_disabled = Color( 0.141176, 0.129412, 0.129412, 1 )
+custom_colors/font_color = Color( 0.290196, 0.211765, 0.211765, 1 )
+icon = ExtResource( 2 )
+
+[node name="Label" type="RichTextLabel" parent="."]
+margin_left = 432.261
+margin_top = 40.2596
+margin_right = 472.261
+margin_bottom = 80.2596
+rect_scale = Vector2( 4.73415, 1.19821 )
+text = "1111"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 35.2777
+margin_top = 34.9283
+margin_right = 132.278
+margin_bottom = 69.9283
+rect_scale = Vector2( 2.28, 1.96 )
+text = "Click"
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="RandomButton" to="." method="_on_RandomButton_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

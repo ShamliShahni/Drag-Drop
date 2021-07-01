@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/melodyloops-preview-game-background-2-2m30s.mp3-6bc2eb42d0719972745d611d13f15097.mp3str"
+
+[deps]
+
+source_file="res://melodyloops-preview-game-background-2-2m30s.mp3"
+dest_files=[ "res://.import/melodyloops-preview-game-background-2-2m30s.mp3-6bc2eb42d0719972745d611d13f15097.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
